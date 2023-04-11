@@ -1,0 +1,2 @@
+sensor_fusion
+-DCATKIN_DEVEL_PREFIX=/home/rameez/EECE5554/LAB4/devel -DCMAKE_INSTALL_PREFIX=/home/rameez/EECE5554/LAB4/install -G Unix Makefiles

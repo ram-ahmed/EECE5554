@@ -1,0 +1,8 @@
+prefix=/home/rameez/EECE5554/LAB4/install
+
+Name: sensor_fusion
+Description: Description of sensor_fusion
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs geometry_msgs message_runtime sensor_msgs

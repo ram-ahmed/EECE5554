@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+<arg name="gps_port"/>
+
+<param name="gps_port" value="$(arg gps_port)"/>
+
+<arg name="imu_port"/>
+
+<param name="imu_port" value="$(arg imu_port)"/>
+
+
+
+    <node pkg="sensor_fusion" type="convert_to_quaternion.py" name="convert_to_quaternion">
+        
+    </node>
+    
+    <node pkg="sensor_fusion" type="imu_driver.py" name="imudata_sender" output="screen">        
+        
+    </node>
+
+    <node pkg="sensor_fusion" type="gps_driver.py" name="gpsdata_sender" output="screen">        
+        
+    </node>
+
+
+</launch>
